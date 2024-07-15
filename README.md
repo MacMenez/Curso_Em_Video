@@ -10,6 +10,6 @@ Acesse [Curso em Vídeo](cursoemvideo.com "Site Oficial") para se inscrever na p
 
 ## Cursos em Desenvolvimento
 
-- [] Java
+- [ ] Java
 
 ## Cursos Concluídos
