@@ -1,43 +1,55 @@
-# Curso de Java Para Iniciantes
+# Curso de Java
 
-### _Curso em Vídeo_
+## Curso de Java Para Iniciantes - Curso em Vídeo
 
-Acesse o [Curso de Java Para Iniciantes](https://www.cursoemvideo.com/curso/java-basico/) na plataforma do Curso em Vídeo.
+🌐 Acesse o [Curso de Java Básico](https://www.cursoemvideo.com/curso/java-basico/) na plataforma do [Curso em Vídeo](https://www.cursoemvideo.com/).
 
-`/install`: contém os instaladores e pacotes neessários para se construir o ambiente de desenvolvimento planejado no curso.
+### 🗃️ Repositório do Curso de Java
 
-_**Nota:** A instalação do JRE é opcional, já que o JDK contém o JRE. Em caso de algum erro, use as versões disponíveis para orreões ou atualizações_
+📦 `/install`: contém os instaladores e pacotes neessários para se construir o ambiente de desenvolvimento planejado no curso. Colocados aqui por questões de praticidade. **A recomendação é verificar os sites oficiais de distribuição**.
 
-## Instalação no Windows
+🖼️ `/img`: contém imagens para representações visuais em determinados momentos que se julgar necessário.
 
-- Para evitar erros de versões instale o JDK atual (versão deste diretório 15.0.2)
-- Para evitar erros de versões instale o JRE atual (versão deste diretório 8u202)
-- Instale primeiro a IDE NetBeans
-- Após a instalação do NetBeans instale o Java FX Scenebuilder (versão deste diretório 2.0)
+> 📌 _**Nota:** A instalação do JRE é necessária, mesmo o JDK contendo o JRE, pois em caso de algum erro, instalar as versões atualizadas (tanto da JRE quanto JDK) disponíveis auxiliam em correções ou atualizações_.
 
-_Os instaladores são baixados diretamente do site oficial da Oracle e estão aqui apenas para praticidade do meu repositório._ Acesso o [site oficial](https://www.oracle.com/br/) e baixe suas versões.
+## 🖥️ Instalação no Windows
 
-## Instalação no Linux
+- Para evitar erros de versões instale o JDK atual (versão deste diretório [15.0.2](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html?_ga=2.170466789.497302932.1720933982-1868601546.1720657917))
+
+- Para evitar erros de versões instale o JRE atual (versão deste diretório [8u202](https://www.oracle.com/br/java/technologies/javase/javase8-archive-downloads.html?_ga=2.210522704.497302932.1720933982-1868601546.1720657917))
+
+- Instale a IDE [NetBeans](https://www.apache.org/dyn/closer.cgi/netbeans/netbeans-installers/13/Apache-NetBeans-13-bin-windows-x64.exe?_ga=2.165821179.497302932.1720933982-1868601546.1720657917)
+
+- Após a instalação do NetBeans instale o [Java FX Scenebuilder](https://www.oracle.com/java/technologies/javafxscenebuilder-1x-archive-downloads.html) (versão deste diretório 2.0)
+
+⚠️ _Os instaladores são baixados diretamente do site oficial da Oracle e estão aqui apenas para praticidade do meu repositório._ Acesso o [site oficial](https://www.oracle.com/br/) e baixe suas versões.
+
+## 🐧Instalação no Linux
 
 A distribuição usada foi a Linux Ubuntu, logo as orientações serão para ela, adapte caso necessário para outras distribuições. Lembrando que o Ubuntu tem compatibilidade com arquivos `.deb` e usa o gerenciador `apt` para instalações.
 
-- Para evitar erros de versões instale o JDK atual (versão deste diretório 15.0.2)
-- Para evitar erros de versões instale o JRE atual (versão deste diretório "jdk-8u202-linux-x64")
-`sudo tar -xvf jdk-8u202-linux-x64.tar.gz -C /usr/lib/jvm`
-- Instale primeiro a IDE NetBeans
-- Após a instalação do NetBeans instale o Java FX Scenebuilder (versão deste diretório 2.0)
-- [Instale o NetBeans](https://snapcraft.io/install/netbeans/ubuntu) pelo snap ou pela Ubuntu Software
-`sudo snap install netbeans --classic`
-- Instale o Java FX Scenebuilder
+- Para evitar erros de versões instale o JDK atual (versão deste diretório [15.0.2](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html?_ga=2.170466789.497302932.1720933982-1868601546.1720657917))
 
-_**NOTA:** Por questões de praticidade com o repositório, a documentação também está inserida no diretório de instalação._
+- Para evitar erros de versões instale o JRE atual (versão deste diretório [8u202](https://www.oracle.com/br/java/technologies/javase/javase8-archive-downloads.html?_ga=2.210522704.497302932.1720933982-1868601546.1720657917))
+
+> 📌 **NOTA:** Após instalar o JDK, realize baixe o JRE e caso seja necessário (devido a falta de um pacote instalavel), use o pacote `.tar.gz` para instalar os binários dentro do repositório do JDK. Use o comando: `sudo tar -xvf <versão baixada>.tar.gz -C /usr/lib/jvm`
+
+- Instale a IDE [NetBeans](https://snapcraft.io/install/netbeans/ubuntu)
+    - Opção via Snap Store ou pela Ubuntu Software
+`sudo snap install netbeans --classic`
+
+- Após a instalação do NetBeans instale o [Java FX Scenebuilder](https://www.oracle.com/java/technologies/javafxscenebuilder-1x-archive-downloads.html) (versão deste diretório 2.0)
+
+⚠️ _Os instaladores são baixados diretamente do site oficial da Oracle e estão aqui apenas para praticidade do meu repositório._ Acesso o [site oficial](https://www.oracle.com/br/) e baixe suas versões.
+
+> 📌 **NOTA:** Por questões de praticidade com o repositório, a documentação também está inserida no diretório de instalação conforme for permitido pelo.
 
 Java FX - tem que ter o scanbuilder
 `java -jar "<nomeArquivo.jar"`
 
 ## Codificação em Java
 
-Orientações e estudo simples a respeito da linguagem Java para sobreviver e relembrar conceitos, além de sixtases e aplicações, servindo como uma espécie de "cola".
+Orientações e estudo simples a respeito da linguagem Java para sobreviver e relembrar conceitos, além de sixtases e aplicações, servindo como uma espécie de "cola". A [Java SE Development Kit 8u411 Documentation e JavaFX API Documentation](https://www.oracle.com/java/technologies/javase-jdk8-doc-downloads.html) também estão disponíveis.
 
 ### Organização de Comentários
 
@@ -74,7 +86,7 @@ Orientações e estudo simples a respeito da linguagem Java para sobreviver e re
 /* Mais orientações em JAVA Docs - Pesquisar no buscador */
 ```
 
-> **Nota:** Mais orientações em Java Docs - Pesquisar no buscador.
+> 📌 **Nota:** Mais orientações em Java Docs - Pesquisar no buscador.
 
 ### Atribuição de Valores
 
@@ -107,19 +119,19 @@ boolean valorD = (boolean) false;
 Trata-se da atribuição de valores por classes, de forma interpretativa, a "variável se tornou um objeto". Estudar Wrapper(invólocro) Class.
 
 ```java
-Integer valorA3 = new Integer(3);
-Float valorB3 = new Float(100.0);
-Character valorC3 = new Character('D');
-Boolean valorD3 = new Boolean(false);
+Integer valorA = new Integer(3);
+Float valorB = new Float(100.0);
+Character valorC = new Character('D');
+Boolean valorD = new Boolean(false);
 ```
 
-> **NOTA:** Não existe tipo **String** na linguagem Java, mas sim uma **Classe Envólocro**.
+> 📌 **NOTA:** Não existe tipo **String** na linguagem Java, mas sim uma **Classe Envólocro**.
 
 Os 4 tipos citados acima, em nível de contextualização são na verdade "famílias" para cada tipo suportado pela linguagem Java, então, sabendo os tipos existentes e (como utilizá-los de forma tradicional ou em Typecast) entendendo as Classes Invólocro será mais fácil entender a tabela a seguir, que descreverá a maioria do tipos importantes para se saber.
 
 ![Tabela](/img/Captura%20de%20Tela%20do%20Curso%20de%20Java%20Para%20Iniciantes%20do%20Curso%20em%20Vídeo.png "Captura de Tela do Curso de Java Para Iniciantes do Curso em Vídeo")
 
-> **NOTA:** Em contexto hitórico, Java foi desenvolvido para rodar em qualquer lugar, *"Escreva uma vez, execute em qualquer lugar"*. Isto faz com que os diferentes tipos numéricos sejam para adaptações, onde buscar melhoria de memória é essencial.
+> 📌 **NOTA:** Em contexto hitórico, Java foi desenvolvido para rodar em qualquer lugar, _"Escreva uma vez, execute em qualquer lugar"_. Isto faz com que os diferentes tipos numéricos sejam para adaptações, onde buscar melhoria de memória é essencial.
 
 ## Saída de Dados
 
