@@ -10,6 +10,18 @@ Acesse [Curso em Vídeo](cursoemvideo.com "Site Oficial") para se inscrever na p
 
 ## Cursos em Desenvolvimento
 
-- [ ] Java
+- [ ] Java Básico
+- [ ] Java POO
+- [ ] Algoritmos
+- [ ] HTML 5
+- [ ] HTML 5 & CSS3
+- [ ] MySQL
+- [ ] Curso de Inglês Para Iniciantes
+- [ ] Git e GitHub
+- [ ] Redes de Computadores
+- [ ] Linux
+- [ ] Hardware
+- [ ] Word
+- [ ] 
 
 ## Cursos Concluídos
