@@ -24,3 +24,12 @@ hs_err_pid*
 replay_pid*
 /Java/.vscode
 Java/TiposPrimitivos/.vscode/settings.json
+Java/TiposPrimitivos/build.xml
+Java/TiposPrimitivos/build/classes/.netbeans_automatic_build
+Java/TiposPrimitivos/build/classes/.netbeans_update_resources
+Java/TiposPrimitivos/manifest.mf
+Java/TiposPrimitivos/nbproject/build-impl.xml
+Java/TiposPrimitivos/nbproject/genfiles.properties
+Java/TiposPrimitivos/nbproject/private/private.properties
+Java/TiposPrimitivos/nbproject/project.properties
+Java/TiposPrimitivos/nbproject/project.xml
