@@ -40,12 +40,11 @@ A distribuição usada foi a Linux Ubuntu, logo as orientações serão para ela
 
 - Após a instalação do NetBeans instale o [Java FX Scenebuilder](https://www.oracle.com/java/technologies/javafxscenebuilder-1x-archive-downloads.html) (versão deste diretório 2.0)
 
-⚠️ _Os instaladores são baixados diretamente do site oficial da Oracle e estão aqui apenas para praticidade do meu repositório._ Acesso o [site oficial](https://www.oracle.com/br/) e baixe suas versões.
-
 > 📌 **NOTA:** Por questões de praticidade com o repositório, a documentação também está inserida no diretório de instalação conforme for permitido pelo.
 
-Java FX - tem que ter o scanbuilder
-`java -jar "<nomeArquivo.jar"`
+⚠️ _Os instaladores são baixados diretamente do site oficial da Oracle e estão aqui apenas para praticidade do meu repositório._ Acesso o [site oficial](https://www.oracle.com/br/) e baixe suas versões.
+
+> 📂 O Java FX e suas dependências (Scanbuilder), geram uma diretório `/dist` que contém o programa executável do projeto desenvolvido. Para que este executável seja utilizado, utilize um **duplo clique** no arquivo `.jar` ou abra o **diretório onde o arquivo se encontra** e use o comando `java -jar "<nomeArquivo.jar"` para executá-lo.
 
 ## Codificação em Java
 
