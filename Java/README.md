@@ -124,21 +124,144 @@ Character valorC = new Character('D');
 Boolean valorD = new Boolean(false);
 ```
 
-> 📌 **NOTA:** Não existe tipo **String** na linguagem Java, mas sim uma **Classe Envólocro**.
+> 📌 **NOTA:** Não existe tipo **String** na linguagem Java, mas sim uma **Classe Invólocro**.
 
 Os 4 tipos citados acima, em nível de contextualização são na verdade "famílias" para cada tipo suportado pela linguagem Java, então, sabendo os tipos existentes e (como utilizá-los de forma tradicional ou em Typecast) entendendo as Classes Invólocro será mais fácil entender a tabela a seguir, que descreverá a maioria do tipos importantes para se saber.
 
 ![Tabela](/img/Captura%20de%20Tela%20do%20Curso%20de%20Java%20Para%20Iniciantes%20do%20Curso%20em%20Vídeo.png "Captura de Tela do Curso de Java Para Iniciantes do Curso em Vídeo")
 
-> 📌 **NOTA:** Em contexto hitórico, Java foi desenvolvido para rodar em qualquer lugar, _"Escreva uma vez, execute em qualquer lugar"_. Isto faz com que os diferentes tipos numéricos sejam para adaptações, onde buscar melhoria de memória é essencial.
+> 📌 **NOTA:** Em contexto hitórico, Java foi desenvolvido para rodar em qualquer lugar, _"Escreva uma vez, execute em qualquer lugar"_. Isto faz com que os diferentes tipos numéricos sejam para adaptações para cada aplicação que será desenvolvida, onde, buscar a melhoria de memória é essencial. Então, por exemplo, códigos para relógios inteligentes (que possuem pouca memória) não será necessário usar um tipo 2⁶⁰ por exemplo, agora uma aplicação científica, esta sim utilizaria um tipo com 2⁶⁰, pois seria neessário devido a aplicação do projeto.
 
-## Saída de Dados
+### Saída de Dados
+
+Maneiras de pegar uma informação da memória do computador e mostrar pra o usuário. Isto é feito com comandos de saída.
+
+- Mostrar informação na saída de dados do sistema
 
 ```java
 System.out.print("");
+```
+
+> 📌 **NOTA:** Para realizar uma quebra de linha dentro do comando `System.out.print("");`, basta acrescentar um `\n` no local do texto que deve quebrar a linha.
+`System.out.print("\n");`
+
+- Mostrar informação na saída de dados do sistema e inserindo uma linha abaixo para espaçamento ou formatação.
+
+```java
 System.out.println("");
 ```
 
+- Mostrar texto com valores de variáveis através de concatenação
+
+```java
+System.out.print("texto " + <variável ou objeto>);
+System.out.println("texto " + <variável ou objeto>);
+```
+
+- Mostrar informação com formatação de tipo
+
+```java
+//Saída para tipos de dados tipo float
+System.out.printf("%.2f", <variavel ou objeto>);
+```
+
+- Mostrar informação com formatação de vários tipos de dados
+
+```java
+System.out.printf("%s %.2f", <variavelString ou objetoString>, <variavelFloat ou objetoFloat>);
+```
+
+> 📌 **NOTA:** Para apresentar mais de um valor formatado o comando `System.out.print();` ou `System.out.println();` não exibe a informação na tela, para isto é necessário utilizar o comando de formatação `System.out.printf();` e caso necessário realizar quebras de linha dentro do comando com o `\n`. Exemplo: `System.out.println("%s \n %.2f", <variavelString ou objetoString>, <variavelFloat ou objetoFloat>)`
+
+- Outra maneira de se utilizar uma saída formatada
+`System.out.format("");`
+
+Pode-se utilizar as mesmas estruturas anteriores com este formato. Exemplo: `System.out.format("%s \n %.2f", <variavelString ou objetoString>, <variavelFloat ou objetoFloat>)`
+
+> 📌 **NOTA:** Os comandos `System.out.printf("");` e `System.out.format("");` formatam números **reais** com a **,** enquanto comandos `System.out.print();` ou `System.out.println();` formatam números com o **.**, então conforme a formatação que deseja, utilize estas opções, lembrando que esta "formatação" se refere a parte fracionada.
+
+### Entrada de Dados
+
+São maneiras de pegar a informação que você possui e registrar na memória ou em um local de armazenamento dentro do dispositivo, geralmente com um teclado.
+
+> 📌 **NOTA:** A linguagem Java vem com os comandos de saída de forma padrão, ou seja, ao instalar o JDK todas as bibliotecas de saída de dados (que geram os comandos) já estão inclusas (biblioteca `java.lang;` por exemplo), porém o mesmo não vale para as bibliotecas de entradas de dados (e seus respectivos comandos) não estão inclusos nestas bibliotecas. Para isso é necessário utilizar outra classe que contenha (internamente em sua biblioteca) comandos para entrada de dados, esta classe é a `import java.util.Scanner;`, que como não é carregada automaticamente, se deve inserir manualmente a cada vez que iniciar um código.
+
+- Criando Objetos Para Entrada de Dados
+
+```java
+import java.util.Scanner;
+
+public class TiposPrimitivos {
+    public static void main(String[] args) throws Exception {
+        Scanner <nomeObjeto> = new Scanner(System.in);
+    }
+}
+```
+
+Se o `system.out` corresponde a saída de dados o `System.in`corresponde a entrada de dados. Logo a classe **Scanner** monitorará a entrada padrão do sistema.
+
+O `<nomeObjeto>` pode ser qualquer nome, deste que siga as regras de nomenclatura de declaração de variável.
+
+Tendo um objeto correspondente a uma entrada padrão, é necessário fazer com que este objeto possa ler e armazenar a leitura na memória, utilize os comandos da classe *Scanner*.
+
+O comando de leitura é identificado conforme o objeto é declarado, como `teclado.`, o uso do ponto dá as opções de leituras fornecidas pela biblioteca do *Scanner*.
+
+Conforme os tipos de dados existentes na linguagem Java, o objeto `teclado.next`, terá uma leitura do tipo especifico da leitura desejada.
+
+```java
+int valorA = teclado.next(); // Lê valor interiro apenas
+float valorB = teclado.nextFloat(); // Lê valores reais
+double valorC = teclado.nextDouble(); // Lê valores reais
+```
+
+> 📌 **NOTA:** Cada tipo de dado de variável tem seu correspondente na biblioteca Scanner para entrada de dados, basta usar o `.` para identificá-los. Para ler texto, usa-se a classe invólucro *String* e o comando de leitura de texto `teclado.nextLine();`.
+
+```java
+String valorD = teclado.nextLine(); // Lê um texto
+```
+
+#### Resolvendo Incompatibilidades de Tipos
+
+A incompatibilidade é relacionada as conversões feitas entre os tipos, como:
+
+```java
+int idade = 30;
+String valor = idade;
+```
+
+Em algumas linguagens esta conversão é feita sem ocasionar erros, porém na linguagem Java, se isto for feito, ocasionará erros. Mesmo utilizando o *typecast* continuará apresentando erro.
+
+```java
+int idade = 30;
+String valor = (String) idade;
+String valor = (int) idade;
+```
+
+Estes erros ocorrem pois String é uma classe invólocro, logo a maneira correta de atribuição com conversão seria `String valorB = Integer.toString(valorA);`. Converta o valor intero `Ìnterger` para um *String* `.toString`.
+
+```java
+public static void main(String[] args) throws Exception {
+    Scanner teclado = new Scanner(System.in);
+    int valorA = 30;
+    String valorB = Integer.toString(valorA);
+}
+```
+A classe invólocro então auxilia em conversões de tipo e 
+
+📎
+💾
+⚙️
+📚
+📖
+📌
 ```java
 
 ```
+
+## Projetos
+- Olá Mundo Swing
+- Olá Mundo JavaFX
+- Relógio Sistema Swing
+- Idioma Sistema Swing
+- Resolução Tela
+- Soma Swing
