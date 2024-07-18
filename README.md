@@ -15,13 +15,20 @@ Acesse [Curso em Vídeo](cursoemvideo.com "Site Oficial") para se inscrever na p
 - [ ] Algoritmos
 - [ ] HTML 5
 - [ ] HTML 5 & CSS3
+    - [ ] Módulo I
+    - [ ] Módulo II
+    - [ ] Módulo III
+    - [ ] Módulo IV
+    - [ ] Módulo V
 - [ ] MySQL
 - [ ] Curso de Inglês Para Iniciantes
+    - [ ] Módulo I
+    - [ ] Módulo II
+    - [ ] Módulo III
 - [ ] Git e GitHub
 - [ ] Redes de Computadores
 - [ ] Linux
 - [ ] Hardware
 - [ ] Word
-- [ ] 
 
 ## Cursos Concluídos
