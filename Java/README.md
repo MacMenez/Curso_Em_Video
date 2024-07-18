@@ -246,7 +246,21 @@ public static void main(String[] args) throws Exception {
     String valorB = Integer.toString(valorA);
 }
 ```
-A classe invólocro então auxilia em conversões de tipo e 
+
+A classe invólocro então auxilia em conversões de tipo permitindo o melhor uso dos dados obtidos.
+
+- 📎[Código Tipos Primitivos]()
+- 📎[Código Converter Tipos]()
+
+### Operadores Aritméticos
+- +(com números): adição
+- +(com Strings): concatenação
+- -: subtração
+- *: multiplicação
+- /: divisão(decimal é separado com o .)
+- %:resto de divisão
+
+- [OperadoresAritmeticos]()
 
 📎
 💾
