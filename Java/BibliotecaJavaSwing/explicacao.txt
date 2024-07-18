@@ -1,0 +1,4 @@
+Aula 5
+A biblioteca Java Swing permite criar interfaces gráficas para ambientes de janela, ou seja, qualquer sistema com ambiente gráfico ela funciona.
+Biblioteca Swing é derivada da awt (Abstract Window Toolkit) que foi uma das primeiras bibliotecas para interfacesa gráficas. Um problema dela é que cabia ao sistema operacional mostrar algum componente, ou seja, visualmente (um botão por exemplo) teria mudanças entre um sistema operacional e outro, logo o proprio sistema operacional definia a aparencia dos componentes do programa. Devido a esta "liberdade" algumas configurações de Windows não necessáriamente funcionariam bem em Mac ou Linux.
+Para resolver estes problemas e evoluir a linguagem criou-se a biblioteca Swing. Acionada atraves do `import javax.swing;`, que além de ser mais agradável visualmente, possui outros componentes interessants para se utilizar interfaces gráficas.
