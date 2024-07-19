@@ -253,6 +253,7 @@ A classe invólocro então auxilia em conversões de tipo permitindo o melhor us
 - 📎[Código Converter Tipos]()
 
 ### Operadores Aritméticos
+
 - +(com números): adição
 - +(com Strings): concatenação
 - -: subtração
@@ -261,6 +262,42 @@ A classe invólocro então auxilia em conversões de tipo permitindo o melhor us
 - %:resto de divisão
 
 - [OperadoresAritmeticos]()
+
+### Operadores Unários
+
+São os mesmos da **Linguagem C** e/ou da **Linguagem PHP**, realizam incremento ou decremento de 1 unidade na variável.
+
+- ++(Incremento): a = a + 1
+- --(Decremento): a = a - 1
+
+### Operadores de Atribuição
+
+Para icrementos e/ou decrementos que ultrapassam 1 unidade, utilize os operadores de atribuição para realizar as operações conforme deseja.
+
+- +=(Somar e Atribuir): a += b -> a = a + b
+- -=(Subtrair e Atribuir): a =- b -> a = a - b
+- *=(Multiplicar e Atribuir): a *= b -> a = a * b
+- /=(Dividir e Atribuir): a /= b -> a = a / b
+- %=(Resto e Atribuir): a %= b -> a = a % b
+
+### Classe Math
+
+Para cálculos mais específicos como expoenciação, cálculos de trigonometria, etc; é necessário utilizar a Classe math.
+
+- `Math.PI`: obtem a constante π
+- `Math.pow(base, expoente)`: cálculos de exponenciação
+- `Math.sqrt(valor)`: cálculos de raíz quadrada
+- `Math.cbrt(valor)`: cálculos de raíz cúbica
+
+#### Arredondamentos
+
+- `Math.abs(-10)`: valor absoluto(abs)
+- `Math.floor(valor)`: arredondamento para baixo(floor), também chamado de "truncagem" ou divisão inteira
+- `Math.ceil(valor)`: arredondamento para cima(ceil)
+- `Math.round(valor)`: arredondamento aritmético(round)
+- `Math.random()`: gera números aleatórios (de tipo double) entre 0 e 1
+
+> 📌 **NOTA:** Para valores randomicos que fogem do intervalo 0 e 1, pode-se utilizar a seguinte solução: `valorMinimo + Math.random() * (valorMaximo - valorMinimo)`. Logo, o valor mínimo somado ao valor aleatório gerado e multiplicado pelo limite do intervalo, obtem-se então o valor aleatório com as delimitações definidas pelas variáveis de valor máximo e mínimo.
 
 📎
 💾
@@ -279,3 +316,4 @@ A classe invólocro então auxilia em conversões de tipo permitindo o melhor us
 - Idioma Sistema Swing
 - Resolução Tela
 - Soma Swing
+- Operadores Swing
