@@ -214,7 +214,7 @@ float valorB = teclado.nextFloat(); // Lê valores reais
 double valorC = teclado.nextDouble(); // Lê valores reais
 ```
 
-> 📌 **NOTA:** Cada tipo de dado de variável tem seu correspondente na biblioteca Scanner para entrada de dados, basta usar o `.` para identificá-los. Para ler texto, usa-se a classe invólucro *String* e o comando de leitura de texto `teclado.nextLine();`.
+> 📌 **NOTA:** Cada tipo de dado de variável tem seu correspondente na biblioteca Scanner para entrada de dados, basta usar o `.` para identificá-los. Para ler texto, usa-se a classe invólucro _String_ e o comando de leitura de texto `teclado.nextLine();`.
 
 ```java
 String valorD = teclado.nextLine(); // Lê um texto
@@ -229,7 +229,7 @@ int idade = 30;
 String valor = idade;
 ```
 
-Em algumas linguagens esta conversão é feita sem ocasionar erros, porém na linguagem Java, se isto for feito, ocasionará erros. Mesmo utilizando o *typecast* continuará apresentando erro.
+Em algumas linguagens esta conversão é feita sem ocasionar erros, porém na linguagem Java, se isto for feito, ocasionará erros. Mesmo utilizando o _typecast_ continuará apresentando erro.
 
 ```java
 int idade = 30;
