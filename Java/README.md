@@ -32,7 +32,8 @@ A distribuição usada foi a Linux Ubuntu, logo as orientações serão para ela
 
 - Para evitar erros de versões instale o JRE atual (versão deste diretório [8u202](https://www.oracle.com/br/java/technologies/javase/javase8-archive-downloads.html?_ga=2.210522704.497302932.1720933982-1868601546.1720657917))
 
-> 📌 **NOTA:** Após instalar o JDK, realize baixe o JRE e caso seja necessário (devido a falta de um pacote instalavel), use o pacote `.tar.gz` para instalar os binários dentro do repositório do JDK. Use o comando: `sudo tar -xvf <versão baixada>.tar.gz -C /usr/lib/jvm`
+> 📌 **NOTA:** Após instalar o JDK, realize baixe o JRE e caso seja necessário (devido a falta de um pacote instalavel), use o pacote `.tar.gz` para instalar os binários dentro do repositório do JDK.  
+Use o comando: `sudo tar -xvf <versão baixada>.tar.gz -C /usr/lib/jvm`
 
 - Instale a IDE [NetBeans](https://snapcraft.io/install/netbeans/ubuntu)
     - Opção via Snap Store ou pela Ubuntu Software
@@ -171,7 +172,8 @@ System.out.printf("%.2f", <variavel ou objeto>);
 System.out.printf("%s %.2f", <variavelString ou objetoString>, <variavelFloat ou objetoFloat>);
 ```
 
-> 📌 **NOTA:** Para apresentar mais de um valor formatado o comando `System.out.print();` ou `System.out.println();` não exibe a informação na tela, para isto é necessário utilizar o comando de formatação `System.out.printf();` e caso necessário realizar quebras de linha dentro do comando com o `\n`. Exemplo: `System.out.println("%s \n %.2f", <variavelString ou objetoString>, <variavelFloat ou objetoFloat>)`
+> 📌 **NOTA:** Para apresentar mais de um valor formatado o comando `System.out.print();` ou `System.out.println();` não exibe a informação na tela, para isto é necessário utilizar o comando de formatação `System.out.printf();` e caso necessário realizar quebras de linha dentro do comando com o `\n`.  
+Exemplo: `System.out.println("%s \n %.2f", <variavelString ou objetoString>, <variavelFloat ou objetoFloat>)`
 
 - Outra maneira de se utilizar uma saída formatada
 `System.out.format("");`
@@ -298,6 +300,8 @@ Para cálculos mais específicos como expoenciação, cálculos de trigonometria
 - `Math.random()`: gera números aleatórios (de tipo double) entre 0 e 1
 
 > 📌 **NOTA:** Para valores randomicos que fogem do intervalo 0 e 1, pode-se utilizar a seguinte solução: `valorMinimo + Math.random() * (valorMaximo - valorMinimo)`. Logo, o valor mínimo somado ao valor aleatório gerado e multiplicado pelo limite do intervalo, obtem-se então o valor aleatório com as delimitações definidas pelas variáveis de valor máximo e mínimo.
+
+
 
 📎
 💾
