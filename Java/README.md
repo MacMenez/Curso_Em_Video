@@ -41,7 +41,7 @@ Use o comando: `sudo tar -xvf <versão baixada>.tar.gz -C /usr/lib/jvm`
 
 - Após a instalação do NetBeans instale o [Java FX Scenebuilder](https://www.oracle.com/java/technologies/javafxscenebuilder-1x-archive-downloads.html) (versão deste diretório 2.0)
 
-> 📌 **NOTA:** Por questões de praticidade com o repositório, a documentação também está inserida no diretório de instalação conforme for permitido pelo.
+> 📌 **NOTA:** Por questões de praticidade com o repositório, a documentação também está inserida no diretório de instalação conforme for permitido.
 
 ⚠️ _Os instaladores são baixados diretamente do site oficial da Oracle e estão aqui apenas para praticidade do meu repositório._ Acesso o [site oficial](https://www.oracle.com/br/) e baixe suas versões.
 
@@ -49,7 +49,7 @@ Use o comando: `sudo tar -xvf <versão baixada>.tar.gz -C /usr/lib/jvm`
 
 ## Codificação em Java
 
-Orientações e estudo simples a respeito da linguagem Java para sobreviver e relembrar conceitos, além de sixtases e aplicações, servindo como uma espécie de "cola". A [Java SE Development Kit 8u411 Documentation e JavaFX API Documentation](https://www.oracle.com/java/technologies/javase-jdk8-doc-downloads.html) também estão disponíveis.
+Orientações e estudo simples a respeito da linguagem Java para sobreviver e relembrar conceitos, além de sintaxes e aplicações, servindo como uma espécie de "cola". A [Java SE Development Kit 8u411 Documentation e JavaFX API Documentation](https://www.oracle.com/java/technologies/javase-jdk8-doc-downloads.html) também estão disponíveis para consulta e orientação direta na documentação original.
 
 ### Organização de Comentários
 
@@ -127,11 +127,11 @@ Boolean valorD = new Boolean(false);
 
 > 📌 **NOTA:** Não existe tipo **String** na linguagem Java, mas sim uma **Classe Invólocro**.
 
-Os 4 tipos citados acima, em nível de contextualização são na verdade "famílias" para cada tipo suportado pela linguagem Java, então, sabendo os tipos existentes e (como utilizá-los de forma tradicional ou em Typecast) entendendo as Classes Invólocro será mais fácil entender a tabela a seguir, que descreverá a maioria do tipos importantes para se saber.
+Os 4 tipos citados acima, em nível de contextualização, são na verdade "famílias" para cada tipo suportado pela linguagem Java, então, sabendo os tipos existentes e (como utilizá-los de forma tradicional ou em Typecast) entendendo as Classes Invólocro será mais fácil entender a tabela a seguir, que descreverá a maioria dos tipos importantes para se saber.
 
 ![Tabela](/img/Captura%20de%20Tela%20do%20Curso%20de%20Java%20Para%20Iniciantes%20do%20Curso%20em%20Vídeo.png "Captura de Tela do Curso de Java Para Iniciantes do Curso em Vídeo")
 
-> 📌 **NOTA:** Em contexto hitórico, Java foi desenvolvido para rodar em qualquer lugar, _"Escreva uma vez, execute em qualquer lugar"_. Isto faz com que os diferentes tipos numéricos sejam para adaptações para cada aplicação que será desenvolvida, onde, buscar a melhoria de memória é essencial. Então, por exemplo, códigos para relógios inteligentes (que possuem pouca memória) não será necessário usar um tipo 2⁶⁰ por exemplo, agora uma aplicação científica, esta sim utilizaria um tipo com 2⁶⁰, pois seria neessário devido a aplicação do projeto.
+> 📌 **NOTA:** Em contexto hitórico, Java foi desenvolvido para rodar em qualquer lugar, _"Escreva uma vez, execute em qualquer lugar"_. Isto faz com que os diferentes tipos numéricos sejam para adaptações para cada aplicação que será desenvolvida, onde, buscar a melhoria de memória é essencial. Então, por exemplo, códigos para relógios inteligentes (que possuem pouca memória) não será necessário usar um tipo 2⁶⁰ por exemplo, agora uma aplicação científica, esta sim utilizaria um tipo com 2⁶⁰, pois seria necessário conforme a aplicação do projeto.
 
 ### Saída de Dados
 
@@ -172,15 +172,14 @@ System.out.printf("%.2f", <variavel ou objeto>);
 System.out.printf("%s %.2f", <variavelString ou objetoString>, <variavelFloat ou objetoFloat>);
 ```
 
-> 📌 **NOTA:** Para apresentar mais de um valor formatado o comando `System.out.print();` ou `System.out.println();` não exibe a informação na tela, para isto é necessário utilizar o comando de formatação `System.out.printf();` e caso necessário realizar quebras de linha dentro do comando com o `\n`.  
+> 📌 **NOTA:** Para apresentar mais de um valor formatado, o comando `System.out.print();` ou `System.out.println();` não exibe a informação na tela, para isto é necessário utilizar o comando de formatação `System.out.printf();` e caso necessário realizar quebras de linha dentro do comando com o `\n`.  
 Exemplo: `System.out.println("%s \n %.2f", <variavelString ou objetoString>, <variavelFloat ou objetoFloat>)`
 
-- Outra maneira de se utilizar uma saída formatada
-`System.out.format("");`
+- Outra maneira de se utilizar uma saída formatada é utilizando o comando `System.out.format("");`
 
 Pode-se utilizar as mesmas estruturas anteriores com este formato. Exemplo: `System.out.format("%s \n %.2f", <variavelString ou objetoString>, <variavelFloat ou objetoFloat>)`
 
-> 📌 **NOTA:** Os comandos `System.out.printf("");` e `System.out.format("");` formatam números **reais** com a **,** enquanto comandos `System.out.print();` ou `System.out.println();` formatam números com o **.**, então conforme a formatação que deseja, utilize estas opções, lembrando que esta "formatação" se refere a parte fracionada.
+> 📌 **NOTA:** Os comandos `System.out.printf("");` e `System.out.format("");` formatam números **reais** com a "**,**" enquanto comandos `System.out.print();` ou `System.out.println();` formatam números com o "**.**", então conforme a formatação que deseja, utilize estas opções, lembrando que esta "formatação" se refere a parte fracionada.
 
 ### Entrada de Dados
 
@@ -313,7 +312,19 @@ Para cálculos mais específicos como expoenciação, cálculos de trigonometria
 
 ```
 
-## Projetos
+## Guia
+
+### Instalação
+
+- Instalação Windows
+- Instalação Linux
+
+### Estudo da Linguagem
+
+- Codificação em Java
+
+### Projetos
+
 - Olá Mundo Swing
 - Olá Mundo JavaFX
 - Relógio Sistema Swing
