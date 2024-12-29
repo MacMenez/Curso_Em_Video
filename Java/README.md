@@ -10,7 +10,7 @@
 
 🖼️ `/img`: contém imagens para representações visuais em determinados momentos que se julgar necessário.
 
-> 📌 _**Nota:** A instalação do JRE é necessária, mesmo o JDK contendo o JRE, pois em caso de algum erro, instalar as versões atualizadas (tanto da JRE quanto JDK) disponíveis auxiliam em correções ou atualizações_.
+> 📌 _**Nota:** A instalação do JRE é necessária, mesmo o JDK contendo o JRE pois, em caso de algum erro, instalar as versões atualizadas (tanto da JRE quanto JDK) disponíveis auxiliam em correções ou atualizações_.
 
 ## 🖥️ Instalação no Windows
 
@@ -26,13 +26,13 @@
 
 ## 🐧Instalação no Linux
 
-A distribuição usada foi a Linux Ubuntu, logo as orientações serão para ela, adapte caso necessário para outras distribuições. Lembrando que o Ubuntu tem compatibilidade com arquivos `.deb` e usa o gerenciador `apt` para instalações.
+A distribuição usada foi a Linux Ubuntu, logo as orientações de instalação serão para ela, adapte caso necessário para outras distribuições. Lembrando que o Ubuntu tem compatibilidade com arquivos `.deb` e usa o gerenciador `apt` para instalações.
 
 - Para evitar erros de versões instale o JDK atual (versão deste diretório [15.0.2](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html?_ga=2.170466789.497302932.1720933982-1868601546.1720657917))
 
 - Para evitar erros de versões instale o JRE atual (versão deste diretório [8u202](https://www.oracle.com/br/java/technologies/javase/javase8-archive-downloads.html?_ga=2.210522704.497302932.1720933982-1868601546.1720657917))
 
-> 📌 **NOTA:** Após instalar o JDK, realize baixe o JRE e caso seja necessário (devido a falta de um pacote instalavel), use o pacote `.tar.gz` para instalar os binários dentro do repositório do JDK.  
+> 📌 **NOTA:** Após instalar o JDK, baixe o JRE e caso seja necessário (devido a falta de um pacote instalavel), use o pacote `.tar.gz` para instalar os binários dentro do repositório do JDK.  
 Use o comando: `sudo tar -xvf <versão baixada>.tar.gz -C /usr/lib/jvm`
 
 - Instale a IDE [NetBeans](https://snapcraft.io/install/netbeans/ubuntu)
@@ -45,7 +45,7 @@ Use o comando: `sudo tar -xvf <versão baixada>.tar.gz -C /usr/lib/jvm`
 
 ⚠️ _Os instaladores são baixados diretamente do site oficial da Oracle e estão aqui apenas para praticidade do meu repositório._ Acesso o [site oficial](https://www.oracle.com/br/) e baixe suas versões.
 
-> 📂 O Java FX e suas dependências (Scanbuilder), geram uma diretório `/dist` que contém o programa executável do projeto desenvolvido. Para que este executável seja utilizado, utilize um **duplo clique** no arquivo `.jar` ou abra o **diretório onde o arquivo se encontra** e use o comando `java -jar "<nomeArquivo.jar"` para executá-lo.
+> 📂 O Java FX e suas dependências (Scanbuilder), geram um diretório `/dist` que contém o programa executável do projeto desenvolvido. Para que este executável seja utilizado, utilize um **duplo clique** no arquivo `.jar` ou abra o **diretório onde o arquivo se encontra** e use o comando `java -jar "<nomeArquivo.jar"` para executá-lo.
 
 ## Codificação em Java
 
@@ -259,7 +259,7 @@ A classe invólocro então auxilia em conversões de tipo permitindo o melhor us
 - +(com Strings): concatenação
 - -: subtração
 - *: multiplicação
-- /: divisão(decimal é separado com o .)
+- /: divisão(decimal é separado com o ".")
 - %:resto de divisão
 
 - [OperadoresAritmeticos]()
